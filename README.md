@@ -148,12 +148,12 @@ Each [release](https://github.com/natecraddock/zf/releases/latest) has binaries 
 
 ### Building from source
 
-For compatibility with system package managers, zf targets the latest stable release of Zig.
+This compatibility branch requires Zig 0.17.0.
 
 ```
 git clone https://github.com/natecraddock/zf
 cd zf
-zig build -Doptimize=ReleaseSafe --summary all
+zig build -Doptimize=safe --summary all
 ```
 
 The executable will be created in `./zig-out/bin/zf`. For debug builds omit `-Doptimize=ReleaseSafe`.
